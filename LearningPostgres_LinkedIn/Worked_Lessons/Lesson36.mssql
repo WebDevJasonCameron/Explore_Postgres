@@ -1,0 +1,20 @@
+-- SELECTING SPECIFIC COLUMNS/FIELDS FROM A TABLE 
+-- #############################################
+
+-- Use explicit column names in SELECT statement
+
+/*
+SELECT column1, column2 FROM tablename
+*/
+
+-- 1. Get first_name FROM actors table
+
+SELECT first_name FROM actors;
+
+-- 2. Get first_name, last_name FROM actors table
+
+SELECT first_name, last_name FROM actors;
+
+-- 3. Get movie_name, movie_lang FROM movies
+
+SELECT movie_name, movie_lang FROM movies;

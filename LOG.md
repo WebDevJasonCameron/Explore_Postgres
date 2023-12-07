@@ -2,6 +2,19 @@
 
 ## 2023 12 07 | 
 
+Learn about Upsert: 
+```
+INSERT INTO t_tags (tag) 
+VALUES 
+	('Pen')
+ON CONFLICT (tag)
+DO 
+	UPDATE SET
+		tag = EXCLUDED.tag,
+		update_date = NOW()
+;
+```
+
 ---
 
 ## 2023 12 06 | Start Log
