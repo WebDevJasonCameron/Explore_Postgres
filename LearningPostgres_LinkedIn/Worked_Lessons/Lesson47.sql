@@ -15,7 +15,9 @@ SELECT *
 FROM movies
 WHERE 
 	movie_lang = 'English'
-	AND director_id = 27;
+	OR movie_lang = 'Chinese'
+	AND director_id = 27
+ORDER BY movie_lang;
 	
 	
 	
