@@ -67,3 +67,10 @@ WHERE
 	movie_lang <> 'English'
 ORDER BY 
 	movie_lang;
+	
+SELECT * 
+FROM movies
+WHERE 
+	movie_lang != 'English'
+ORDER BY 
+	movie_lang;
