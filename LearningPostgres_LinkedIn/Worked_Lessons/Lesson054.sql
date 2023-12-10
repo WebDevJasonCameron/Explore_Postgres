@@ -65,6 +65,12 @@ LIMIT 5 OFFSET 4
 ;
 
 
--- 7. 
+-- 7. List all top 5 movies after the top 5 highest domestic profits movies
+
+SELECT *
+FROM movies
+ORDER BY revenues_domestic DESC NULLS LAST
+LIMIT 5 OFFSET 5
+;
 
 
