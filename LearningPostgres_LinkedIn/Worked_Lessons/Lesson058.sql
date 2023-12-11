@@ -73,6 +73,22 @@ ORDER BY
 	first_name
 ;
 
+-- 10. Case sensitive 
+
+SELECT * 
+FROM actors
+WHERE 
+	first_name LIKE '%Tim';
+
+SELECT * 
+FROM actors
+WHERE 
+	first_name LIKE '%tim';
+	
+SELECT * 
+FROM actors
+WHERE 
+	first_name ILIKE '%tim';
 
 
 

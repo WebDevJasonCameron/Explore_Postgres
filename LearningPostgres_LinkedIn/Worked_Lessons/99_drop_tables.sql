@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS movies_revenues;
+DROP TABLE IF EXISTS directors;
+DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS movies;
+
+DROP TABLE IF EXISTS demo_sorting;
