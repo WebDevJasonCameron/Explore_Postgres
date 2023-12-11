@@ -41,11 +41,37 @@ FROM actors
 WHERE 
 	first_name LIKE 'A%'
 ORDER BY 
-	first_name;
+	first_name
+;
 
+-- 7.  Get all acotrs name where last name ending with 'a'
 
+SELECT *
+FROM actors 
+WHERE 
+	last_name LIKE '%a'
+ORDER BY
+	last_name
+;
 
+-- 8. Get all acotrs name where first name with 5 characters only
 
+SELECT *
+FROM actors
+WHERE
+	first_name LIKE '_____'
+ORDER BY first_name
+;
+
+-- 9. Get all actors names where first name contains 'l' on the second place
+
+SELECT *
+FROM actors
+WHERE 
+	first_name LIKE '_l%'
+ORDER BY 
+	first_name
+;
 
 
 
