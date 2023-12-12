@@ -31,17 +31,53 @@ ORDER BY date_of_birth
 
 SELECT * 
 FROM movies_revenues
-SELECT * 
-FROM actors
-WHERE
-	date_of_birth IS NULL
-ORDER BY date_of_birth
+ORDER BY 
+	revenues_domestic
 ;
+ 
+SELECT *
+FROM movies_revenues
+WHERE
+	revenues_domestic IS NULL
 ORDER BY 
 	revenues_domestic
 ;
 
+-- 4. Get list of movies where either domestic or international revenues is NULL
 
+SELECT *
+FROM movies_revenues
+WHERE 
+	revenues_domestic IS NULL 
+	OR revenues_international IS NULL
+;
 
+-- 5. Get list of mivies where either domestic and international revenues are NULL
 
+SELECT *
+FROM movies_revenues
+WHERE 
+	revenues_domestic IS NOT NULL
+;
 
+-- 6. How about using the following instead of IS NULL
+
+SELECT * 
+FROM actors
+WHERE date_of_birth = NULL
+;
+
+SELECT * 
+FROM actors
+WHERE date_of_birth = 'NULL'					-- ERROR
+;
+
+SELECT * 
+FROM actors
+WHERE date_of_birth = ''						-- ERROR
+;
+
+SELECT * 
+FROM actors
+WHERE date_of_birth = " "						-- ERROR
+;
