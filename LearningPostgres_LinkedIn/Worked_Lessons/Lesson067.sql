@@ -45,5 +45,27 @@ SELECT * FROM table_time;
 -- Getting current time
 SELECT CURRENT_TIME;
 
+-- Getting current time with precision
+SELECT CURRENT_TIME(4);
+
+-- Use Local time
+SELECT CURRENT_TIME, LOCALTIME;
+
+-- Airthematic operatoions
+SELECT time '12:00' - time '04:00' AS RESULT;
+
+-- Intervals
+
+-- n = number
+-- type = second, minute, hours, day, month, year....
+
+SELECT 
+	CURRENT_TIME,
+	CURRENT_TIME + interval '-2 hours' AS RESULT;
+
+
+
+
+
 
 
