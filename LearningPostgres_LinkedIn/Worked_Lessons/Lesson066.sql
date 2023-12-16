@@ -1,1 +1,2 @@
--- Blank SQL file for Lesson 066
+-- Selecting Number data type
+-- #############################
