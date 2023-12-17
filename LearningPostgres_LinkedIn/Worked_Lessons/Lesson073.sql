@@ -44,5 +44,7 @@ VALUES
 SELECT * FROM table_hstore;
 
 -- -> operator
-SELECT book_info -> 'publisher'
+SELECT 
+	book_info -> 'publisher' AS "Publisher",
+	book_info -> 'e_cost' AS "Electronic Cost" 
 FROM table_hstore;
