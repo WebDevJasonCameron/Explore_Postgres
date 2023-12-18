@@ -1,4 +1,4 @@
--- to_char()
+-- to_char() & to_number()
 -- ################
 /*
 	1. PostgreSQL TO_CHAR() function converts
@@ -75,6 +75,47 @@ SELECT
 	revenues_domestic,
 	TO_CHAR(revenues_domestic, '$99999D99')
 FROM movies_revenues;
+
+--	To number
+SELECT TO_NUMBER(
+	'1426.89',
+	'9999.'
+);
+
+SELECT
+	TO_NUMBER(
+		'10,625.78-',
+		'99G999D99S'
+	);
+
+-- formating
+SELECT TO_NUMBER(
+	'$1,420.64',
+	'L9G999D99'
+);
+
+SELECT TO_NUMBER(
+	'1,234,567.89',
+	'9G999g999.99'
+);
+
+SELECT TO_NUMBER(
+	'1,234,567.89',
+	'9G999g999D99'
+);
+
+--Converting money number
+SELECT TO_NUMBER(
+	'$1,234,567.89',
+	'L9G999g999D99'
+);
+
+
+
+
+
+
+
 
 
 
