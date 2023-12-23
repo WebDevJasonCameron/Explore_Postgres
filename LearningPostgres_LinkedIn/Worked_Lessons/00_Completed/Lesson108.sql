@@ -16,3 +16,18 @@
 		   FOREIGN KEY (column_name_2_or_something) REFERENCES child_table_name (column_name_from_2_table)
 	   );
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

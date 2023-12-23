@@ -1,12 +1,10 @@
--- Blank SQL file for Lesson 110
 -- FK
 
 -- Create
 CREATE TABLE t_products(
 	product_id INT PRIMARY KEY,
 	product_name VARCHAR(100) NOT NULL,
-	supplier_id INT NOT NULL,
-	FOREIGN KEY (supplier_id) REFERENCES t_suppliers(supplier_id)
+	supplier_id INT NOT NULL
 );
 
 CREATE TABLE t_suppliers(
@@ -35,7 +33,6 @@ VALUES
 
 SELECT * FROM t_suppliers;
 SELECT * FROM t_products;
-
 
 DROP TABLE t_products;
 DROP TABLE t_suppliers;
