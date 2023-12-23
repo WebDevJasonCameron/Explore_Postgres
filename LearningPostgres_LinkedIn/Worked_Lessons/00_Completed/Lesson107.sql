@@ -32,3 +32,10 @@ CREATE TABLE t_grades (
 	grade INT NOT NULL,
 	PRIMARY KEY (course_id, student_id) -- <- ORDER IMPORTANT
 );
+
+ALTER TABLE t_grades
+DROP CONSTRAINT t_grades_pkey;
+
+ALTER TABLE t_grades
+	ADD CONSTRAINT t_grades_course_id_session_id_pkey
+		PRIMARY KEY (course_id, student_id);
