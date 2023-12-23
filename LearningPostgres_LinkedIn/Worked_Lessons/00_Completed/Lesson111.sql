@@ -22,6 +22,12 @@ VALUES
 	(2, 'SUPPLIER 2')
 ;
 
+INSERT INTO t_suppliers
+	(supplier_id, supplier_name)
+VALUES
+	(100, 'SUPPLIER 100')
+;
+
 INSERT INTO t_products
 	(product_id, product_name, supplier_id)
 VALUES
@@ -31,10 +37,18 @@ VALUES
 INSERT INTO t_products
 	(product_id, product_name, supplier_id)
 VALUES
-	(3, 'COMPUTER', 10);
+	(3, 'COMPUTER', 100);
 
 SELECT * FROM t_suppliers;
 SELECT * FROM t_products;
+
+DELETE FROM t_products
+WHERE 
+	product_id = 3;
+
+DELETE FROM t_suppliers 
+WHERE 
+	supplier_id = 100;
 
 
 DROP TABLE t_products;
