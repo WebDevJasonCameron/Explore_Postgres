@@ -39,7 +39,11 @@ VALUES
 	
 	
 	
-	
+-- Update
+UPDATE staff
+SET salary = 10000
+WHERE 
+	staff_id = 1;
 	
 	
 	
