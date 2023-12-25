@@ -26,5 +26,17 @@ CREATE TABLE contacts (
 	contact VARCHAR(150)
 );
 
--- Insert Data
+-- Alter
 ALTER SEQUENCE table_seq OWNED BY contacts.contact_id
+
+-- Insert Data
+INSERT INTO contacts
+	(contact)
+VALUES
+	('Adam'),
+	('Smash'),
+	('Calvin'),
+	('Mocha');
+	
+-- View
+SELECT * FROM contacts;
