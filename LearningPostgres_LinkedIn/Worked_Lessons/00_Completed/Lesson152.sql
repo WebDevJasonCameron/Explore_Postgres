@@ -1,0 +1,28 @@
+-- FORMATTING DATES
+-- #####################
+
+SELECT 
+	CURRENT_TIMESTAMP;
+	
+SELECT 
+	CURRENT_TIMESTAMP,
+	TO_CHAR('2020-01-01 10:00:00'::TIMESTAMP, 'YYYY Month DD');
+	
+-- view timezone info
+
+SELECT 
+	CURRENT_TIMESTAMP,
+	TO_CHAR('2020-01-01 10:00:00'::TIMESTAMP, 'YYYY Month DD'),
+	TO_CHAR('2020-01-01 10:00:00'::TIMESTAMP, 'YYYY Month DD'),
+	TO_CHAR('2020-01-01t10:45:55-6:00'::TIMESTAMP, 'YYYY Month DD hh::mm::ss tz');
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

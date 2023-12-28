@@ -1,1 +1,11 @@
--- Blank SQL file for Lesson 154
+-- MAKE_INTERVAL (years, months, weeks, days, hours, minutes, seconds)
+SELECT 
+	MAKE_INTERVAL(2020,01,01,01,10,30,45);	
+
+-- See the effects of week
+SELECT
+	MAKE_INTERVAL(2020,01,01,01,10,30,45),
+	MAKE_INTERVAL(2020,02,01,01,10,30,45),
+	MAKE_INTERVAL(2020,03,01,01,10,30,45),
+	MAKE_INTERVAL(2020,04,01,01,10,30,45),
+	MAKE_INTERVAL(2020,05,01,01,10,30,45);

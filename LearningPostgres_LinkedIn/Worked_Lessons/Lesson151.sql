@@ -1,2 +1,0 @@
--- Using TO_TIMESTAMP function
--- ##################################
