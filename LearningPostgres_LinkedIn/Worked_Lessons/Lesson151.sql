@@ -1,1 +1,2 @@
--- Blank SQL file for Lesson 151
+-- Using TO_TIMESTAMP function
+-- ##################################
