@@ -9,6 +9,28 @@
 
 -- * Unlike INNER JOIN, LEFT / RIGHT JOIN, CROSS JOIN does not have a join predicate
 
-/*
+-- 1. cross left_product and right_product
 
-*/
+SELECT 
+	*
+FROM left_products l
+CROSS JOIN right_products r;
+
+-- 2. Reverse
+
+SELECT 
+	*
+FROM right_products r
+CROSS JOIN left_products l;
+
+-- 3. CROSS JOIN actors with directors
+
+SELECT *
+FROM actors a
+CROSS JOIN directors d;
+
+
+
+
+
+
