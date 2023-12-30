@@ -35,7 +35,7 @@ JOIN movies_revenues r ON r.movie_id = m.movie_id
 SELECT
  	*
 FROM actors a
-JOIN movies_actors a on a.actors_id = m.actors_id
+1JOIN movies_actors a on a.actors_id = m.actors_id
 JOIN movies m ON m.movie_id = a.movie_id
 
 
